@@ -48,21 +48,23 @@ export class AppComponent {
   position: number = 0;
   movementCheck() {
     if(this.timeLeft >= this.randomCheck) {
-      this.position++;
+      this.positionMovement();
       this.timeLeft = 200;
     }
   }
 
   positionMovement() {
-    switch(this.position) {
-      case 0: {
-        this.position++;
-        break;
-      }
-
-      case 1: {
-        this.position = Math.floor(Math.random() * (3 - 2 + 1) + 2);
-      }
+    if(this.position == 1) {
+      this.position = Math.floor(Math.random() * (3 - 2 + 1) + 2);
+    }
+    else if (this.position == 4) {
+      this.position = Math.floor(Math.random() * (6 - 5 + 1) + 5);
+    }
+    else if (this.position == 2 || this.position == 5) {
+      this.position+=2;
+    }
+    else {
+      this.position++;
     }
   }
 
