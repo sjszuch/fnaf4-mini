@@ -4,11 +4,7 @@
 <app-map area="{{ position }}"></app-map>
 <button (click)="startTimer()">Start</button>
 <button (click)="onLight()">Light</button>
+<app-devmenu lightOn="{{lightOn}}"  timeToRand="{{timeToRand}}" timeLeft="{{timeLeft}}"
+randomCheck="{{randomCheck}}" position="{{position}}"></app-devmenu>
 
-<p>{{lightOn}}</p>
-
-<p>{{timeLeft}} Seconds Passed </p>
-<p>{{timeToRand}} Random</p>
-<p> {{randomCheck}}</p>
-<p>{{position}}</p>
 
