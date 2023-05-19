@@ -1,0 +1,20 @@
+.container {
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  div {
+    background-color: rgb(131, 226, 131);
+    width: fit-content;
+    display: flex;
+    gap: 3rem;
+
+    p {
+      background-color: rgb(211, 226, 188);
+      padding: .2rem;
+      border-radius: 5px;
+    }
+  }
+}
