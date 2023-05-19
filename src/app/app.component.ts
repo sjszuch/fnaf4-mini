@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { timer } from 'rxjs';
 
 @Component({
@@ -121,5 +121,11 @@ export class AppComponent {
     "https://pbs-prod.linustechtips.com/monthly_2021_03/1647043410_LinusWindowsXP.png.52fed85d600faa323ec2fa515d1b3ff7.png",
     "https://c8.alamy.com/comp/2HT9TTF/beautiful-landscape-view-of-green-hills-with-blue-sky-windows-xp-background-2HT9TTF.jpg"
   ]
+
+
+  @HostListener('window:keyup', ['$event'])
+keyEvent(event: KeyboardEvent) {
+   this.onLight();
+}
 
 }
