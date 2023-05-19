@@ -1,0 +1,10 @@
+.container {
+  position:fixed;
+  z-index: -1;
+}
+
+img {
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
+}

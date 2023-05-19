@@ -1,8 +1,14 @@
+<app-view lightStatus="{{lightStatus}}"></app-view>
+
+
 <app-map area="{{ position }}"></app-map>
 <button (click)="startTimer()">Start</button>
 <button (click)="onLight()">Light</button>
+
+<p>{{lightOn}}</p>
 
 <p>{{timeLeft}} Seconds Left....</p>
 <p>{{timeToRand}} Random</p>
 <p> {{randomCheck}}</p>
 <p>{{position}}</p>
+

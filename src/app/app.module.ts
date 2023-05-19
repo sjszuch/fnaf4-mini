@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MapComponent } from './components/map/map.component';
 import { LightComponent } from './components/light/light.component';
+import { ViewComponent } from './components/view/view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
-    LightComponent
+    LightComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,

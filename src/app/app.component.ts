@@ -20,7 +20,14 @@ export class AppComponent {
 
   startTimer() {
     this.interval = setInterval(() => {
+
+      if(this.lightOn == false) {
         this.timeLeft+=30;
+      }
+      else {
+        this.timeLeft = 0;
+      }
+
 
         // This will call the randomly generated number function every x seconds then reset
         if(this.timeToRand <= 2) {
@@ -71,15 +78,31 @@ export class AppComponent {
 
 
   // Called when light button is pressed
-  onLight() {
-    this.timeLeft = 0;
-    if(this.position == 1 || this.position == 4) {
-      this.position = 0;
-    }
+  lightOn: boolean = false;
 
-    if(this.position == 7) {
-      // Reroute to win screen
-      console.log("Win");
+  // This is a placeholder variable to pass into the view component
+  lightStatus: string = "Off";
+
+  onLight() {
+    if(this.lightOn == false) {
+      this.lightStatus = "On";
+
+      this.timeLeft = 0;
+      if(this.position == 1 || this.position == 4) {
+        this.position = 0;
+      }
+
+      if(this.position == 7) {
+        // Reroute to win screen
+        console.log("Win");
+      }
+
+      this.lightOn = true;
+    }
+    else {
+      this.lightStatus = "Off";
+      this.lightOn=false;
     }
   }
+
 }
