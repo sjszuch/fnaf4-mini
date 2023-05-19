@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./light.component.scss']
 })
 export class LightComponent {
+  onLight() {
 
+  }
 }
