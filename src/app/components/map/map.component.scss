@@ -5,16 +5,22 @@
   text-align: center;
   align-items: center;
 
-  div {
+  .row {
     background-color: rgb(131, 226, 131);
     width: fit-content;
     display: flex;
     gap: 3rem;
-
-    p {
-      background-color: rgb(211, 226, 188);
-      padding: .2rem;
-      border-radius: 5px;
-    }
   }
 }
+
+.directory {
+  background-color: rgb(211, 226, 188);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.subtitle {
+  font-size: .5rem;
+  background-color: red;
+}
+

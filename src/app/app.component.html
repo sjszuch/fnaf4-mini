@@ -1,9 +1,8 @@
-<app-map></app-map>
-<app-light></app-light>
+<app-map area="{{ position }}"></app-map>
 <button (click)="startTimer()">Start</button>
-
-<button (click)='startTimer()'>Start Timer</button>
+<button (click)="onLight()">Light</button>
 
 <p>{{timeLeft}} Seconds Left....</p>
 <p>{{timeToRand}} Random</p>
 <p> {{randomCheck}}</p>
+<p>{{position}}</p>

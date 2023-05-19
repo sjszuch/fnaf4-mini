@@ -1,47 +1,58 @@
 <div class="container">
 
-  <div class="pos1">
-    <p>Starting pos</p>
+  <div class="row">
+    <div class="holder">
+      <p class="directory">Starting pos</p>
+      <p class="subtitle" *ngIf="area == 0">ACTIVE</p>
+    </div>
+
   </div>
 
-  <div class="pos2">
-    <p>Middle pos</p>
+  <div class="row">
+    <p class="directory">Middle pos</p>
+    <p class="subtitle" *ngIf="area == 1">ACTIVE</p>
   </div>
 
   <!-- // Pos 3 can be either left or right -->
-  <div class="pos3">
+  <div class="row">
 
     <div class="left3">
-      <p>Left3</p>
+      <p class="directory">Left3</p>
+      <p class="subtitle" *ngIf="area == 2">ACTIVE</p>
     </div>
 
     <div class="right3">
-      <p>Right3</p>
+      <p class="directory">Right3</p>
+      <p class="subtitle" *ngIf="area == 3">ACTIVE</p>
     </div>
 
   </div>
 
   <!-- // Pos 4 will always be middle -->
-  <div class="pos4">
-    <p>Middle pos 4</p>
+  <div class="row">
+    <p class="directory">Middle pos 4</p>
+    <p class="subtitle" *ngIf="area == 4">ACTIVE</p>
   </div>
 
   <!-- // Pos 5 either left or right -->
-  <div class="pos5">
+  <div class="row">
 
     <div class="left5">
-      <p>left5</p>
+      <p class="directory">left5</p>
+      <p class="subtitle" *ngIf="area == 5">ACTIVE</p>
     </div>
 
     <div class="right5">
-      <p>right5</p>
+      <p class="directory">right5</p>
+      <p class="subtitle" *ngIf="area == 6">ACTIVE</p>
     </div>
 
   </div>
 
    <!-- Pos 6 middle -->
-  <div class="pos6">
-    <p>Final middle</p>
+  <div class="row">
+    <p class="directory">Final middle</p>
+    <p class="subtitle" *ngIf="area == 7">ACTIVE</p>
   </div>
 
 </div>

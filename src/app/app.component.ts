@@ -41,7 +41,43 @@ export class AppComponent {
   randomCheck: number = 499;
   randomGen(min: number, max:number) {
     this.randomCheck = Math.floor(Math.random() * (max - min + 1) + min);
+    this.movementCheck();
   }
 
   // Check IF main timer is GREATER than the randomly generated interval to determine movement
+  position: number = 0;
+  movementCheck() {
+    if(this.timeLeft >= this.randomCheck) {
+      this.position++;
+      this.timeLeft = 200;
+    }
+  }
+
+  positionMovement() {
+    switch(this.position) {
+      case 0: {
+        this.position++;
+        break;
+      }
+
+      case 1: {
+        this.position = Math.floor(Math.random() * (3 - 2 + 1) + 2);
+      }
+    }
+  }
+
+
+
+  // Called when light button is pressed
+  onLight() {
+    this.timeLeft = 0;
+    if(this.position == 1 || this.position == 4) {
+      this.position = 0;
+    }
+
+    if(this.position == 7) {
+      // Reroute to win screen
+      console.log("Win");
+    }
+  }
 }
