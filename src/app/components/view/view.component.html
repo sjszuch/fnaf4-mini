@@ -1,4 +1,6 @@
 <!--This will be updated to display an image according to the position number that is passed to it-->
-<div class="container" *ngIf="lightStatus == 'On'">
-  <img src="{{image}}" alt="">
+<div class="container">
+  <img *ngIf="lightStatus == 'On'" src="assets/images/{{ image }}" alt="" />
+
+  <img *ngIf="lightStatus == 'Off'" src="assets/images/nolights.webp" alt="" />
 </div>

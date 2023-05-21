@@ -1,10 +1,17 @@
-<app-view lightStatus="{{lightStatus}}" image="{{toDisplay[position]}}"></app-view>
+<app-view
+  class="view"
+  lightStatus="{{ lightStatus }}"
+  image="{{ toDisplay[position] }}"
+></app-view>
 
-
-<app-map area="{{ position }}"></app-map>
 <button (click)="startTimer()">Start</button>
 <button (click)="onLight()">Light</button>
-<app-devmenu lightOn="{{lightOn}}"  timeToRand="{{timeToRand}}" timeLeft="{{timeLeft}}"
-randomCheck="{{randomCheck}}" position="{{position}}"></app-devmenu>
 
-
+<!-- <app-map area="{{ position }}"></app-map>
+<app-devmenu
+  lightOn="{{ lightOn }}"
+  timeToRand="{{ timeToRand }}"
+  timeLeft="{{ timeLeft }}"
+  randomCheck="{{ randomCheck }}"
+  position="{{ position }}"
+></app-devmenu> -->
