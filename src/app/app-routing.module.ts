@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { StartscreenComponent } from './components/startscreen/startscreen.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '/', component: StartscreenComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
