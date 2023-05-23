@@ -1,14 +1,20 @@
+<div *ngIf="startScreen" class="startscreen">
+    <h3>Title</h3>
+    <p>Press any key to shine light. Stop the character on the X to win. Turn on audio for best experience.</p>
+    <button (click)="beginGame()">Start</button>
+    <button (click)="beginGame()">Start (Mobile)</button>
+</div>
+
 <app-view
   class="view"
   lightStatus="{{ lightStatus }}"
   image="{{ toDisplay[position] }}"
-></app-view>
+>
+</app-view>
 
-<button (click)="startTimer()">Start</button>
-<button (click)="onLight()">Light</button>
+<!-- <app-map area="{{ position }}"></app-map> -->
 
-<!-- <app-map area="{{ position }}"></app-map>
-<app-devmenu
+<!-- <app-devmenu
   lightOn="{{ lightOn }}"
   timeToRand="{{ timeToRand }}"
   timeLeft="{{ timeLeft }}"

@@ -17,8 +17,16 @@ export class AppComponent {
   interval: number = 0;
   subscribeTimer: any;
 
+  startScreen: boolean = true;
+
+  beginGame() {
+    this.startScreen=false;
+    this.startTimer();
+  }
 
   startTimer() {
+
+
     this.interval = setInterval(() => {
 
       if(this.lightOn == false) {
@@ -56,7 +64,6 @@ export class AppComponent {
     },1000)
   }
 
-
   // Random number generator, generates a number between 400 and 499 every 2 seconds
   randomCheck: number = 499;
   randomGen(min: number, max:number) {
@@ -89,8 +96,6 @@ export class AppComponent {
       this.position++;
     }
   }
-
-
 
   // Called when light button is pressed
   lightOn: boolean = false;
@@ -149,7 +154,7 @@ export class AppComponent {
 
   @HostListener('window:keyup', ['$event'])
 keyEvent(event: KeyboardEvent) {
-  
+
    this.onLight();
 }
 

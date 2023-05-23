@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 ::ng-deep * {
   margin: 0;
   padding: 0;
 }
 
-.view {
-  max-width: 20px;
-  height: 2px;
+*{
+  font-family: Gloria Hallelujah;
+}
+
+.startscreen {
+  background-color: white;
+  position: absolute;
+  text-align: center;
+  border-radius: 5px;
+  max-width: 25%;
 }

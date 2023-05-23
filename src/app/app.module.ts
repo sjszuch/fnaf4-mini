@@ -7,6 +7,7 @@ import { MapComponent } from './components/map/map.component';
 import { LightComponent } from './components/light/light.component';
 import { ViewComponent } from './components/view/view.component';
 import { DevmenuComponent } from './components/devmenu/devmenu.component';
+import { WinscreenComponent } from './components/winscreen/winscreen.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DevmenuComponent } from './components/devmenu/devmenu.component';
     MapComponent,
     LightComponent,
     ViewComponent,
-    DevmenuComponent
+    DevmenuComponent,
+    WinscreenComponent
   ],
   imports: [
     BrowserModule,
